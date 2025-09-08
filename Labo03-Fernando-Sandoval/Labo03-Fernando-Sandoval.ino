@@ -18,7 +18,7 @@ const unsigned long intervalo = 1000; // intervalo de actualización (1 seg)
 unsigned long ultimaMillis = 0;
 
 void setup() {
-Serial.begin(9600);
+Serial.begin(9600); // Iniciar comunicación serial
 while (!Serial) { }
 delay(100);
 Serial.println("Iniciando lectura LM35 + OLED...");
